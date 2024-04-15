@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    margin: 15px 0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.container .section {
+    flex: 0 0 auto;
+    width: 350px;
+    margin: 20px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section .info {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 0.8px solid rgb(255, 255, 255);
+}
+
+.info span,
+.info h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px 10px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    height: 220px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 0.8px solid rgb(255, 255, 255);
+}
+
+.show i {
+    font-size: 100px;
+    color: #ff8c00;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    color: #333;
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    height: 100px;
+}
+
+.selection button {
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #333;
+    font-size: 20px;
+    color: #ff8c00;
+    transition: background 0.3s ease;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+.selection button:hover {
+    background: #ff8c00;
+    color: #333;
+    transform: scale(1.1);
+    border: 1px solid rgb(43, 255, 50);
+}
